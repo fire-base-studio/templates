@@ -1,5 +1,20 @@
 {
   "name": "Svelte + LangChain",
   "description": "A Svelte app with LangChain and Google Gemini pre-installed.",
-  "icon": "icon.png"
+  "icon": "icon.png",
+  "categories": [
+    "Web app"
+  ],
+  "params": [
+    {
+      "id": "language",
+      "name": "Language",
+      "type": "enum",
+      "default": "js",
+      "options": {
+        "js": "JavaScript",
+        "ts": "TypeScript"
+      }
+    }
+  ]
 }
