@@ -1,0 +1,5 @@
+{
+  "name": "Svelte + LangChain",
+  "description": "A Svelte app with LangChain and Google Gemini pre-installed.",
+  "icon": "icon.png"
+}
