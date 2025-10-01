@@ -34,4 +34,9 @@
       };
     };
   };
+  services = {
+    docker = {
+      enable = true;
+    };
+  };
 }

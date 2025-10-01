@@ -13,11 +13,8 @@ A Svelte app with LangChain and Google Gemini pre-installed.
 This template is a customized version of the standard `svelte-vite` template. Here's a summary of the key modifications:
 
 *   **`dev.nix` (Template Logic):**
-    *   An `npm-install` block was added to automatically install the following Node.js packages into the development environment:
-        *   `langchain`
-        *   `@langchain/google-genai`
-        *   `@google/generative-ai`
-        *   `dotenv`
+    *   The `npm install` command was modified to automatically install `langchain`, `@langchain/google-genai`, `@google/generative-ai`, and `dotenv`.
+    *   The Docker daemon is now enabled by default through the addition of `services.docker.enable = true;` within the `idx` configuration block, making the environment container-ready.
 
 *   **`idx-template.json` (Template Metadata):**
     *   `name` changed to `Svelte + LangChain`.
@@ -29,4 +26,4 @@ This template is a customized version of the standard `svelte-vite` template. He
 *   **Added & Modified Files:**
     *   `icon.png`: A local copy of the Svelte logo was added.
     *   `.idx/airules.md`: This file was significantly modified, merging the standard Gemini API rules with Svelte-specific best practices to provide more accurate and context-aware AI assistance.
-    *   `README.md`: This file was created from scratch.
+    *   `README.md`: This file was created from scratch and is regularly updated to reflect template changes.
