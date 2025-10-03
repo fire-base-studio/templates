@@ -2,7 +2,7 @@
 
 This template demonstrates how to implement a simple in-memory OAuth provider for an MCP (Moxy-Cloud-Platform) server. It's an excellent starting point for understanding and testing authentication flows in MCP without needing external services.
 
-<a href="https://idx.dev/new?template=mcp/oauth-provider" target="_blank"><img src="https://idx.dev/btn/open_in_idx_dark.svg" alt="Open in IDX" /></a>
+<a href="https://idx.dev/new?template=https://github.com/fire-base-studio/templates/tree/main/mcp/oauth-provider" target="_blank"><img src="https://idx.dev/btn/open_in_idx_dark.svg" alt="Open in IDX" /></a>
 
 ## What's Inside?
 
