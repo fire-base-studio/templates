@@ -1,18 +1,16 @@
-{ ... }: {
-  packages = []; # No special packages needed for bootstrap
+{ ... }:
 
+{
   bootstrap = ''
-    # Copy the template files to the destination directory ($out)
-    # The paths are relative to this nix file.
-    cp -rf ${./.gitignore} "$out/.gitignore"
-    cp -rf ${./.idx} "$out/.idx"
-    cp -rf ${./LICENSE} "$out/LICENSE"
-    cp -rf ${./README.md} "$out/README.md"
-    cp -rf ${./package.json} "$out/package.json"
-    cp -rf ${./src} "$out/src"
-    cp -rf ${./idx-template.json} "$out/idx-template.json"
+    # Make all files in the template writeable
+    # so we can copy them to the workspace.
+    chmod -R +w .
 
-    # Ensure all files are writable by the user
+    # Copy all files from the template
+    # to the destination directory ($out).
+    # The paths are relative to this nix file.
+    cp -rf ./* "$out/"
+    cp -f ./dev.nix "$out/.idx/dev.nix"
     chmod -R u+w "$out"
   '';
 }
