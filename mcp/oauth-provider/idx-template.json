@@ -1,0 +1,8 @@
+
+{
+  "name": "MCP Server: In-Memory OAuth",
+  "description": "Демонстрирует, как реализовать простой OAuth-провайдер в памяти для аутентификации в MCP-сервере.",
+  "categories": ["mcp", "oauth", "auth", "example"],
+  "icon": "🔷",
+  "publisher": "noshimorimoshi Github User"
+}

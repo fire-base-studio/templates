@@ -1,0 +1,16 @@
+
+{
+  "name": "mcp-oauth-provider-example",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "npx tsx src/index.ts"
+  },
+  "dependencies": {
+    "@mcp/server": "latest"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.2",
+    "typescript": "^5.3.3"
+  }
+}
