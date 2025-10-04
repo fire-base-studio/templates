@@ -1,7 +1,7 @@
 {
   "name": "MCP Server Template",
   "description": "(model-context-protocol) - A collection of templates for MCP servers.",
-  "icon": "https://www.gstatic.com/devrel-devsite/vbb62cc5a3e8f17e37bae49926bfaf2491c2c3971ed3bb084c7d0d359146f27b3/firebase/images/lockup.svg",
+  "icon": "https://www.gstatic.com/images/branding/productlogos/gemini_2025_blue/v1/192px.svg",
   "publisher": "noshimorimoshi github user",
   "categories": [
     "mcp"

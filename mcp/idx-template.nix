@@ -1,14 +1,12 @@
 { pkgs, mcp_template ? "oauth-provider", ... }:
 {
-  # This is the bootstrap script that will be executed when the workspace is created.
-  # It copies the selected template files into the root of the new workspace.
   bootstrap = ''
     set -euo pipefail
     echo "--- Bootstrapping MCP Template ---"
     echo "Selected template: ${mcp_template}"
     
-    # Define the source directory relative to the template root
-    SOURCE_DIR="./${mcp_template}"
+    # Define the source directory using Nix path interpolation to get the correct absolute path.
+    SOURCE_DIR="${./.}/${mcp_template}"
 
     # Check if the source directory exists
     if [ ! -d "$SOURCE_DIR" ]; then
