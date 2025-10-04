@@ -1,11 +1,13 @@
 { pkgs, mcp_template ? "oauth-provider", ... }:
 {
-  bootstrap = pkgs.writeShellScriptBin "bootstrap" ''
+  # This is the bootstrap script that will be executed when the workspace is created.
+  # It copies the selected template files into the root of the new workspace.
+  bootstrap = ''
     set -euo pipefail
     echo "--- Bootstrapping MCP Template ---"
     echo "Selected template: ${mcp_template}"
     
-    # Define the source directory
+    # Define the source directory relative to the template root
     SOURCE_DIR="./${mcp_template}"
 
     # Check if the source directory exists
@@ -14,12 +16,12 @@
       exit 1
     fi
 
-    echo "Copying files from $SOURCE_DIR to the workspace root"
+    echo "Copying files from $SOURCE_DIR to the workspace root..."
     
-    # Copy all contents (including dotfiles) from the subdirectory to the output
+    # Copy all contents (including dotfiles) from the subdirectory to the output directory ($out)
     cp -a "$SOURCE_DIR/." "$out"
     
-    # The files might be read-only, ensure they are writable for the user
+    # The files in nix store are read-only, so we need to make them writable for the user.
     chmod -R u+w "$out"
     
     echo "--- Bootstrap complete ---"
