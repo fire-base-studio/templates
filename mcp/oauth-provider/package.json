@@ -1,8 +1,8 @@
-
 {
   "name": "mcp-oauth-provider-example",
   "version": "0.0.1",
   "private": true,
+  "description": "Demonstrates how to implement a simple in-memory OAuth provider for an MCP server.",
   "scripts": {
     "start": "npx tsx src/index.ts"
   },

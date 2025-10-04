@@ -1,11 +1,10 @@
 {
   "name": "MCP Server Template",
-  "description": "Start a project for MCP (Moxy-Cloud-Platform) servers.",
-  "icon": "https://www.gstatic.com/images/branding/product/2x/firebase_64dp.png",
-  "publisher": "Google LLC",
+  "description": "(model-context-protocol) - A collection of templates for MCP servers.",
+  "icon": "🔷",
+  "publisher": "noshimorimoshi github user",
   "categories": [
-    "Web app",
-    "Server"
+    "mcp"
   ],
   "params": [
     {
