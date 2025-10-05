@@ -6,4 +6,4 @@ This template provides a starting point for building servers that adhere to the 
 
 Click the button below to create a new IDX workspace with this template:
 
-[![Open in IDX](https://cdn.idx.dev/btn/try_dark_32.svg)](https://idx.google.com/new?template=templates/mcp)
+[![Open in Firebase Studio](https://img.shields.io/badge/Open%20in-Firebase%20Studio-blue?logo=firebase)](https://idx.google.com/new?template=https://github.com/fire-base-studio/templates/tree/main/mcp)
