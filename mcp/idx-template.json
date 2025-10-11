@@ -13,7 +13,8 @@
       "type": "enum",
       "default": "oauth-provider",
       "options": {
-        "oauth-provider": "In-Memory OAuth Provider Example"
+        "oauth-provider": "In-Memory OAuth Provider Example",
+        "tools": "MCP server with Tools capability"
       }
     }
   ]
