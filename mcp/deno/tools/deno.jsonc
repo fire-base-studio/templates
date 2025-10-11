@@ -1,0 +1,14 @@
+// This file is the Deno equivalent of package.json.
+// It contains metadata about the project and defines tasks (scripts).
+{
+  "name": "mcp-quickstart-ts-deno",
+  "version": "1.0.0",
+  "description": "A Deno port of a simple MCP weather server written in TypeScript.",
+  "author": "",
+  "license": "ISC",
+  "tasks": {
+    // To run the server, execute "deno task start" in the terminal from the "deno" directory.
+    // The --allow-net flag is required for the application to fetch data from the weather API.
+    "start": "deno run --allow-net src/index.ts"
+  }
+}
