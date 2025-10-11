@@ -1,0 +1,10 @@
+{
+  "name": "mcp-oauth-provider-deno",
+  "version": "0.0.1",
+  "description": "A Deno port of a simple in-memory OAuth provider for an MCP server.",
+  "author": "",
+  "license": "ISC",
+  "tasks": {
+    "start": "deno run --allow-net src/index.ts"
+  }
+}

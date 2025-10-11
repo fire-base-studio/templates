@@ -11,10 +11,12 @@
       "id": "mcp_template",
       "name": "MCP Template",
       "type": "enum",
-      "default": "oauth-provider",
+      "default": "node/oauth-provider",
       "options": {
-        "oauth-provider": "In-Memory OAuth Provider Example",
-        "tools": "MCP server with Tools capability"
+        "node/oauth-provider": "In-Memory OAuth Provider Example (Node)",
+        "node/tools": "MCP server with Tools capability (Node)",
+        "deno/oauth-provider": "In-Memory OAuth Provider Example (Deno)",
+        "deno/tools": "MCP server with Tools capability (Deno)"
       }
     }
   ]
